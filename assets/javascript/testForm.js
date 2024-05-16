@@ -1,6 +1,6 @@
 $(document).ready(() => {
-  $("#work-order-form").submit((event) => {
-    event.preventDefault(); // Prevent default form submission
+  $("#work-order-form").submit(function (event) {
+    event.preventDefault();
 
     const formData = new FormData(this);
 
@@ -11,8 +11,6 @@ $(document).ready(() => {
       processData: false,
       contentType: false,
       success: (response) => {
-        // Request was successful
-
         // Write success message to the page
         console.log(response);
       },
