@@ -1,7 +1,5 @@
 <?php
 
-require_once 'config.php';
-
 $actions = [
   'testForm' => 'templates/testForm.php',
   'messages' => 'templates/messages.php',

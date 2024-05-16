@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <!-- Note that the php "action" does not get used. Instead we use jquery to send an Ajax POST request -->
   <form id="work-order-form" action="processForm.php" method="post">
     <h1>Test Form</h1>
     <h2 id="success-message"></h2>
