@@ -12,8 +12,8 @@
 </head>
 
 <body>
-  <h1>Test Form</h1>
   <form id="work-order-form" action="processForm.php" method="post">
+    <h1>Test Form</h1>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
     <br><br>

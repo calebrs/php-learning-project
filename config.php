@@ -1,5 +1,4 @@
 <?php
-// Database configuration
 $db_config = array(
   'host' => 'localhost',
   'dbname' => 'php_tutorial',

@@ -17,15 +17,12 @@ try {
 
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  // Prepare SQL statement
   $stmt = $pdo->prepare("INSERT INTO messages (name, email, message) VALUES (:name, :email, :message)");
 
-  // Bind parameters
   $stmt->bindParam(':name', $name);
   $stmt->bindParam(':email', $email);
   $stmt->bindParam(':message', $message);
 
-  // Execute the statement
   $stmt->execute();
 
   echo 'Form data saved successfully!';
