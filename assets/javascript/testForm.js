@@ -11,11 +11,11 @@ $(document).ready(() => {
       processData: false,
       contentType: false,
       success: (response) => {
-        // Write success message to the page
-        console.log(response);
+        $("#success-message").text("Your Message has successfully been logged");
+        $("#work-order-form")[0].reset();
       },
       error: function (xhr, status, error) {
-        // Write Request failed to the page
+        $("#success-message").text("Error: Your message could not be logged");
         console.error("Error:", error);
       },
     });

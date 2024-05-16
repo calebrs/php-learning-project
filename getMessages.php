@@ -7,7 +7,7 @@ function getMessages()
     $pdo = new PDO($dsn, 'user1', 'ChangeMe');
 
     if ($pdo) {
-      echo "Connected to the database successfully!";
+      echo '<script>console.log("Connected to the database successfully!"); </script>';
     }
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

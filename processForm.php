@@ -8,6 +8,7 @@ $message = $_POST['message'];
 // Validate/sanitize the data here
 
 try {
+  // connect to database
   $dsn = 'mysql:host=' . $db_config['host'] . ';dbname=' . $db_config['dbname'];
   $pdo = new PDO($dsn, $db_config['username'], $db_config['password']);
 
